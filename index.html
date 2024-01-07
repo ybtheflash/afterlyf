@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>AFTERLYF</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/icons8-key-bearicons-blue-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/icons8-key-bearicons-blue-32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/icons8-key-bearicons-blue-96.png">
+
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="main-heading" id="main-heading">AFTER<span id="typing"></span><span id="dotpulse">.</span></h1>
+        <p class="sub-text"><i>What are you leaving behind?</i></p>
+    </div>
+
+    <script>
+        // JavaScript for typing animation
+        const text = 'LYF';
+        let index = 0;
+
+        function typeText() {
+            document.getElementById('typing').textContent += text.charAt(index);
+            index++;
+
+            if (index < text.length) {
+                setTimeout(typeText, 150); // Adjust typing speed (milliseconds)
+            }
+        }
+
+        setTimeout(typeText, 1000); // Wait for 2 seconds before typing 'LYF'
+    </script>
+</body>
+
+</html>
