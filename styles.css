@@ -32,14 +32,14 @@ body {
 
 #typing {
   font-family: "ArialicH", Arial, sans-serif;
-  font-size: 1em; /* Set the font size to match the main-heading */
+  font-size: 0.8em;
   animation: blink-caret 0.75s infinite;
   margin-bottom: -0.2em; /* Adjust for better alignment */
 }
 
 #dotpulse {
   font-family: "Arial", sans-serif;
-  font-size: 1em; /* Set the font size to match the main-heading */
+  font-size: 1em;
   animation: pulse-caret 1s infinite;
   margin-bottom: -0.2em; /* Adjust for better alignment */
 }
@@ -79,7 +79,7 @@ body {
   }
 
   #typing {
-    font-size: 0.8em;
+    font-size: 0.975em;
   }
 
   #dotpulse {
@@ -87,7 +87,7 @@ body {
   }
 
   .sub-text {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 }
 
@@ -98,7 +98,7 @@ body {
   }
 
   #typing {
-    font-size: 1em;
+    font-size: 0.975em;
   }
 
   #dotpulse {
