@@ -14,7 +14,9 @@
 <body>
     <div class="container">
         <h1 class="main-heading" id="main-heading">AFTER<span id="typing"></span><span id="dotpulse">.</span></h1>
-        <p class="sub-text"><i>What are you leaving behind?</i></p>
+        <i>
+            <p class="sub-text" id="subtxt"></p>
+        </i>
     </div>
 
     <script>
@@ -32,6 +34,20 @@
         }
 
         setTimeout(typeText, 1000); // Wait for 2 seconds before typing 'LYF'
+
+        const text2 = 'What are you leaving behind?';
+        let index2 = 0;
+
+        function typeText2() {
+            document.getElementById('subtxt').textContent += text2.charAt(index2);
+            index2++;
+
+            if (index2 < text2.length) {
+                setTimeout(typeText2, 50); // Adjust typing speed (milliseconds)
+            }
+        }
+
+        setTimeout(typeText2, 3000);
     </script>
 </body>
 
